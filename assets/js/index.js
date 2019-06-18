@@ -3,6 +3,14 @@ firebase.auth().onAuthStateChanged(function(user) {
         // User is signed in.
 
         window.location = "portreport.html";
+        firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
+            .then(function() {
+
+            })
+            .catch(function(error) {
+                var errorCode = error.code;
+                var errorMessage = error.message;
+            })
 
 
     } else {
@@ -13,6 +21,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 
     }
 });
+
 
 function login() {
 
@@ -50,6 +59,14 @@ function func() {
             // User is signed in.
 
             window.location = "portreport.html";
+            firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
+                .then(function() {
+
+                })
+                .catch(function(error) {
+                    var errorCode = error.code;
+                    var errorMessage = error.message;
+                })
 
 
         } else {
