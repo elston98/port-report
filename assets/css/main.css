@@ -37,6 +37,7 @@ html {
 
 body {
     background: #ffffff;
+    font-family: 'Calibri';
 }
 
 body.is-preload *,
@@ -304,6 +305,7 @@ h6 a {
 
 h1 {
     font-size: 3rem;
+    font-family: 'Calibri';
     line-height: 1.2;
 }
 
@@ -2742,14 +2744,14 @@ ul.icons li .icon:before {
     -webkit-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
-    background-image: url("../../images/bg.jpg");
-    background-position: bottom;
+    background-image: url("../../images/af.png");
     background-repeat: no-repeat;
+    background-position-y: 70%;
     background-size: cover;
     border-top: 0;
     display: -ms-flexbox;
-    height: 20rem !important;
-    min-height: 20 rem;
+    height: 10rem !important;
+    min-height: 10 rem;
     overflow: hidden;
     position: relative;
     text-align: center;
@@ -3039,7 +3041,7 @@ ul.icons li .icon:before {
 }
 
 #banner:after {
-    background: linear-gradient(135deg, #1b4472 0%, #181818 74%);
+    /* background: linear-gradient(135deg, #1b4472 0%, #181818 74%); */
     content: ' ';
     display: block;
     height: 100%;
