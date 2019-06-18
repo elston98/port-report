@@ -55,25 +55,38 @@
 
 
     <style>
+        body {
+            font-family: 'Calibri';
+        }
+        
         #customers {
             font-family: "Calibri";
             border-collapse: collapse;
-            width: 24.5%;
+            width: 24%;
             display: inline-table;
         }
-        /*  #customers td,
+        
+        #customers td,
         #customers th {
-            border: 1px solid #ddd;
+            border: 1px solid #CCC;
             padding: 8px;
             width: 25%;
         }
         
         #customers tr:nth-child(even) {
-            background-color: #f2f2f2;
+            background-color: #c3e5f3;
         }
         
-        #customers tr:hover {
+        #customers tr:nth-child(odd) {
+            background-color: white;
+        }
+        
+        #customers tr:nth-child(odd):hover {
             background-color: #ddd;
+        }
+        
+        #customers tr:nth-child(even):hover {
+            background-color: #e1ccf0;
         }
         
         #customers td {
@@ -83,9 +96,10 @@
         #customers th {
             padding-top: 12px;
             padding-bottom: 12px;
-            text-align: left;
+            font-size: 18px;
+            text-align: center;
             background-color: #4CAF50;
-            color: white;
+            color: #cccccc;
             width: 25%;
         }
         
@@ -110,7 +124,68 @@
         
         table th {
             background-color: #999999;
-        } */
+        }
+        
+        form {
+            position: relative;
+            top: 40px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: all 1s;
+            width: 300px;
+            height: 50px;
+            background: white;
+            box-sizing: border-box;
+            border-radius: 30px;
+            border: 4px solid white;
+            padding: 5px;
+        }
+        
+        input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            ;
+            height: 42.5px;
+            line-height: 30px;
+            outline: 0;
+            border: 0;
+            display: none;
+            font-size: 1em;
+            border-radius: 30px;
+            padding: 0 20px;
+        }
+        
+        .fa {
+            box-sizing: border-box;
+            padding-top: 15px;
+            width: 42.5px;
+            height: 42.5px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-radius: 50%;
+            color: #07051a;
+            text-align: center;
+            font-size: 1.2em;
+            transition: all 1s;
+        }
+        
+        form:hover {
+            width: 500px;
+            cursor: pointer;
+        }
+        
+        form:hover input {
+            display: block;
+        }
+        
+        form:hover .fa {
+            color: #203864;
+        }
+        
+        */
     </style>
 </head>
 
@@ -120,28 +195,33 @@
     <section id="banner">
 
         <div class="inner">
-            <h1 style="text-align: left;font-family: 'Calibri'">AFRICA</h1>
+            <h1 style="text-align: left;font-family: 'Calibri';font-weight: bold;opacity:0.8">AFRICA</h1>
 
         </div>
 
     </section>
 
 
+    <form action="">
+        <input class="light-table-filter" id="myInput" data-table="order-table" placeholder="Search.." type="search" style="border-radius: 20px;">
+        <i class="fa fa-search"></i>
+    </form>
+
+
+
+    <!-- <input type="search" onkeyup="myFunction()" class="light-table-filter" id="myInput" data-table="order-table" placeholder="Filter"> -->
 
 
 
 
-    <input type="search" class="light-table-filter" data-table="order-table" placeholder="Filter">
+    <table style="margin-left:20px" class="order-table table" id="customers">
 
+        <thead>
+            <tr>
+                <th style="background-color:#203864;color:white">EASTERN</th>
+            </tr>
 
-
-
-    <table class="order-table table" id="customers">
-
-        <tr>
-            <th style="background-color:green;color:white">Eastern</th>
-
-        </tr>
+        </thead>
         <tbody>
             <tr>
                 <td>Comoros</td>
@@ -173,13 +253,158 @@
                 </td>
             </tr>
         </tbody>
+
     </table>
     <table class="order-table table" id="customers">
+        <thead>
+            <tr>
+                <th style="background-color:#203864;color:white">
+                    NORTHERN
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Algeria
+                </td>
+            </tr>
+            <tr>
+                <td>Egypt</td>
+            </tr>
+            <tr>
+                <td>Libya</td>
+            </tr>
+            <tr>
+                <td>Morocco</td>
+            </tr>
+            <tr>
+                <td>Tunisia</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="order-table table" id="customers">
+        <thead>
+            <tr>
+                <th style="background-color:#203864;color:white">
+                    SOUTHERN
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Angola</td>
 
-        <tr>
-            <th style="background-color:green;color:white">Northern</th>
 
-        </tr>
+            </tr>
+            <tr>
+                <td>Congo</td>
+            </tr>
+            <tr>
+                <td>Madagascar</td>
+            </tr>
+            <tr>
+                <td>Mauritius</td>
+            </tr>
+            <tr>
+                <td>Mozambique</td>
+            </tr>
+            <tr>
+                <td>Namibia</td>
+
+            </tr>
+            <tr>
+                <td>
+                    Reunion
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    South Africa
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    St. Helena
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="order-table table" id="customers">
+        <thead>
+            <tr>
+                <th style="background-color:#203864;color:white">
+                    WESTERN
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Benin</td>
+
+
+            </tr>
+            <tr>
+                <td>Cameroon</td>
+            </tr>
+            <tr>
+                <td>Cape Verde</td>
+            </tr>
+            <tr>
+                <td>Central African Republic</td>
+            </tr>
+            <tr>
+                <td>Cote D'lvoire</td>
+            </tr>
+            <tr>
+                <td>Equatorial Guinea</td>
+
+            </tr>
+            <tr>
+                <td>
+                    Gabon
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Gambia
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Ghana
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Guinea
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Guinea-Bissau
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Liberia
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Mauritiana
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- <table class="order-table table" id="customers">
+        <thead>
+            <tr>
+                <th style="background-color:#203864;color:white">NORTHERN</th>
+
+            </tr>
+        </thead>
         <tbody>
             <tr>
                 <td>Algeria</td>
@@ -203,11 +428,12 @@
     </table>
 
     <table class="order-table table" id="customers">
+        <thead>
+            <tr>
+                <th style="background-color:#203864;color:white">SOUTHERN</th>
 
-        <tr>
-            <th style="background-color:green;color:white">Southern</th>
-
-        </tr>
+            </tr>
+        </thead>
         <tbody>
             <tr>
                 <td>Angola</td>
@@ -249,10 +475,12 @@
     </table>
     <table class="order-table table" id="customers">
 
-        <tr>
-            <th style="background-color:green;color:white">Western</th>
+        <thead>
+            <tr>
+                <th style="background-color:#203864;color:white">WESTERN</th>
 
-        </tr>
+            </tr>
+        </thead>
         <tbody>
             <tr>
                 <td>Benin</td>
@@ -269,24 +497,50 @@
                 <td>Central African Republic</td>
             </tr>
             <tr>
-                <td>Seychelles</td>
+                <td>Cote D'lvoire</td>
             </tr>
             <tr>
-                <td>Somalia</td>
+                <td>Equatorial Guinea</td>
 
             </tr>
             <tr>
                 <td>
-                    Sudan
+                    Gabon
                 </td>
             </tr>
             <tr>
                 <td>
-                    Tanzania
+                    Gambia
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Ghana
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Guinea
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Guinea-Bissau
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Liberia
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Mauritiana
                 </td>
             </tr>
         </tbody>
     </table>
+    <div class="not-found" style="display:none">Not Found</div> -->
 
 
 
@@ -333,6 +587,33 @@
             });
 
         })(document);
+        $('#myInput').on('click', function(e) {
+            e.preventDefault();
+            $(this).css('border-color', 'black');
+        });
+
+        // function myFunction() {
+        //     var input, filter, table, tr, td, cell, i, j;
+        //     input = document.getElementById("myInput");
+        //     filter = input.value.toUpperCase();
+        //     table = document.getElementById("customers");
+        //     tr = table.getElementsByTagName("tr");
+        //     for (i = 1; i < tr.length; i++) {
+        //         // Hide the row initially.
+        //         tr[i].style.display = "none";
+
+        //         td = tr[i].getElementsByTagName("td");
+        //         for (var j = 0; j < td.length; j++) {
+        //             cell = tr[i].getElementsByTagName("td")[j];
+        //             if (cell) {
+        //                 if (cell.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        //                     tr[i].style.display = "";
+        //                     break;
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
     </script>
 
 
