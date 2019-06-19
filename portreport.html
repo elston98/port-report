@@ -199,13 +199,14 @@
         }
         
         h2 {
-            margin-top: -180px;
+            margin-top: -30px;
+            transition: margin-top 0.5s;
         }
         
         section .screen .content h2 {
             text-align: center;
             text-transform: uppercase;
-            font-size: 30px;
+            font-size: 20px;
             font-weight: bold;
             color: white;
         }
@@ -278,17 +279,21 @@
         
         section .screen:nth-child(6):hover {
             background-size: 60rem;
+            font-size: 40px;
+        }
+        
+        section .screen:hover h2 {
+            margin-top: -150px;
         }
         
         section .screen:hover {
             flex-grow: 5;
             opacity: 1;
         }
-        
-        section .screen:hover h2 {
+        /* section .screen:hover h2 {
             font-size: 40px;
             top: 30px;
-        }
+        } */
         /* div {
             width: 16.65%;
             height: 100%;
@@ -332,11 +337,16 @@
 </head>
 
 <body onload="check()" class="is-preload">
+    <!-- <div style="width:100%;height:30px;background-color:black;z-index: 999">
+        <img src="images/waliv.png" style="width:80px;height:inherit" alt=""></div> -->
+
     <!-- <button class="btn" onclick="logout()">Logout</button> -->
     <section class="split">
+
         <div onclick="location.href='north_america.html'" class="screen">
 
             <div class="content">
+
                 <h2>North America</h2>
                 <!-- <p>Some content about africa </p> -->
 
