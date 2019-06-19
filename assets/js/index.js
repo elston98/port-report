@@ -48,10 +48,6 @@ function logout() {
 
 }
 
-function check() {
-
-
-}
 
 function func() {
     firebase.auth().onAuthStateChanged(function(user) {
@@ -59,6 +55,32 @@ function func() {
             // User is signed in.
 
             window.location = "portreport.html";
+            firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
+                .then(function() {
+
+                })
+                .catch(function(error) {
+                    var errorCode = error.code;
+                    var errorMessage = error.message;
+                })
+
+
+        } else {
+            // No user is signed in.
+
+            window.location = "master.html";
+
+        }
+    });
+
+}
+
+function check() {
+    firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+            // User is signed in.
+
+            // window.alert("Welcome " + user.email);
             firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
                 .then(function() {
 
