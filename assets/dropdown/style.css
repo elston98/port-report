@@ -371,9 +371,11 @@
     display: none;
 }
 
+
+/* 
 .nav-dropdown-sm .btn {
     padding: 0.625rem 0;
-}
+} */
 
 .nav-dropdown-sm .dropdown-toggle::after {
     position: absolute;
