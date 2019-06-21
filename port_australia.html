@@ -161,6 +161,8 @@
             padding: 0 20px;
         }
         
+        .fa {}
+        
         .fa {
             height: 42.5px;
             top: 0;
@@ -209,7 +211,17 @@
 
     <form action="">
         <input class="light-table-filter" id="myInput" data-table="order-table" placeholder="Search.." type="search" style="border-radius: 20px;">
-        <i class="fa fa-search"></i>
+        <i class="fa fa-search" style="padding-top: 15px;
+        width: 42.5px;
+        height: 42.5px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 50%;
+        color: #07051a;
+        text-align: center;
+        font-size: 1.2em;
+        transition: all 1s;"></i>
     </form>
 
 
@@ -735,7 +747,7 @@
                     console.log(name);
 
                     var content = document.createElement("p");
-                    content.innerHTML = "<a  class='fa'  href='" + url + "' >" + "&#xf1c2 " + name + "</a>";
+                    content.innerHTML = "<a  class='fa file'  href='" + url + "' >" + "&#xf1c2 " + name + "</a>";
 
 
                     mbody.appendChild(content);
