@@ -5553,12 +5553,12 @@ button.close {
 }
 
 .modal-open {
-    overflow: hidden
+    overflow-y: hidden;
 }
 
 .modal-open .modal {
-    overflow-x: hidden;
-    overflow-y: auto
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .modal {
@@ -5569,7 +5569,7 @@ button.close {
     left: 0;
     z-index: 1050;
     display: none;
-    overflow: hidden;
+    overflow-y: hidden;
     outline: 0
 }
 
@@ -5682,7 +5682,7 @@ button.close {
     -ms-flex-align: center;
     align-items: center;
     -ms-flex-pack: end;
-    justify-content: flex-end;
+    justify-content: center;
     padding: 1rem;
 }
 
