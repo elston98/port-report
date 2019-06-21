@@ -5684,7 +5684,16 @@ button.close {
     -ms-flex-pack: end;
     justify-content: flex-end;
     padding: 1rem;
-    border-top: 1px solid #e9ecef
+}
+
+.modal-footer img {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: end;
+    justify-content: flex-start;
+    padding: 1rem;
 }
 
 .modal-footer>:not(:first-child) {

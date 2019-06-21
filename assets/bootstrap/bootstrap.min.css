@@ -440,14 +440,14 @@ figure {
 }
 
 a {
-    color: #F1C050;
-    text-decoration: none
+    color: #2A4EA6;
+    text-decoration: none;
 }
 
 a:focus,
 a:hover {
     color: #0074d9;
-    text-decoration: underline*/
+    text-decoration: underline;
 }
 
 a:focus {
@@ -5081,9 +5081,7 @@ button.close {
 }
 
 .modal-footer {
-    padding: 15px;
-    text-align: right;
-    border-top: 1px solid #e5e5e5
+    border-top: solid 1px #e5e5e5;
 }
 
 .modal-footer::after {

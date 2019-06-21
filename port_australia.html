@@ -190,8 +190,6 @@
         form:hover .fa {
             color: #203864;
         }
-        
-        */
     </style>
 </head>
 
@@ -567,16 +565,20 @@
 
     <div id="orderModal" class="modal hide fade" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content" style="background-color:#ccc">
                 <div class="modal-header">
-                    <h4 id="heads" style="text-align: left" class="modal-title"></h4>
+                    <h4 id="heads" style="text-align: center" class="modal-title">></h4>
+
+
 
                 </div>
                 <div id="mbody" class="modal-body">
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                    <button type="button" class="btn" data-dismiss="modal">Close</button>
+
                 </div>
             </div>
         </div>
@@ -698,7 +700,7 @@
                     console.log(name);
 
                     var content = document.createElement("p");
-                    content.innerHTML = "<a  class='fa file'  href='" + url + "' >" + "&#xf1c2 " + name + "</a>";
+                    content.innerHTML = "<img src='images/Blue.png' style='width:20px;height: 20px'> <a style='font-color: #2A4EA6'   href='" + url + "' >" + name + "</a>";
 
 
                     mbody.appendChild(content);
