@@ -161,7 +161,20 @@
             padding: 0 20px;
         }
         
-        .fa {}
+        #load {
+            color: #2A4EA6;
+            font-size: 20px;
+        }
+        
+        #heads {
+            color: #2A4EA6;
+            text-align: center;
+        }
+        
+        #err {
+            color: red;
+            font-size: 20px;
+        }
         
         .fa {
             height: 42.5px;
@@ -567,7 +580,7 @@
         <div class="modal-dialog">
             <div class="modal-content" style="background-color:#ccc">
                 <div class="modal-header">
-                    <h4 id="heads" style="text-align: center" class="modal-title">></h4>
+                    <h4 id="heads" class="modal-title">></h4>
 
 
 
@@ -647,6 +660,7 @@
 
             var mbody = document.getElementById("mbody");
             var content = document.createElement("p");
+            content.setAttribute("id", "load");
             content.innerHTML = "Loading Data..";
             mbody.appendChild(content);
             var value = event.target.innerHTML;
@@ -678,6 +692,7 @@
             //if there is no node with the port-name that is clicked error message is displayed
             if (ports == null) {
                 var err = document.createElement("p");
+                err.setAttribute("id", "err");
                 mbody.innerHTML = "";
                 err.innerHTML = "No Port Reports Found";
                 mbody.appendChild(err);
@@ -700,7 +715,7 @@
                     console.log(name);
 
                     var content = document.createElement("p");
-                    content.innerHTML = "<img src='images/Blue.png' style='width:20px;height: 20px'> <a style='font-color: #2A4EA6'   href='" + url + "' >" + name + "</a>";
+                    content.innerHTML = "<img src='images/Blue.png' style='width:20px;height: 20px;margin-bottom:5px;'> <a style='font-size:20px;font-color: #2A4EA6'   href='" + url + "' >" + name + "</a>";
 
 
                     mbody.appendChild(content);
