@@ -163,6 +163,8 @@
         
         #btn {
             color: white;
+            display: inline-block;
+            position: relative;
         }
         
         #load {
@@ -173,6 +175,8 @@
         #heads {
             color: white;
             text-align: center;
+            width: inherit;
+            height: inherit;
         }
         
         #err {
@@ -206,6 +210,11 @@
         
         form:hover .fa {
             color: #203864;
+        }
+        
+        .wrap {
+            vertical-align: middle;
+            display: table-cell;
         }
     </style>
 </head>
@@ -582,9 +591,9 @@
 
     <div id="orderModal" class="modal hide fade" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content" style="background-color:#ccc">
+            <div class="modal-content" style="background-color:white;">
                 <div class="modal-header" style="background-color:#2F5597">
-                    <h4 id="heads" class="modal-title"></h4>
+                    <h4 id="heads" style="text-transform:uppercase;font-weight: bold" class="modal-title"></h4>
 
 
 
@@ -592,10 +601,10 @@
                 <div id="mbody" class="modal-body">
 
                 </div>
-                <div class="modal-footer">
-
-                    <button type="button" id="btn" class="btn" style="background-color:red;color:white" data-dismiss="modal">CLOSE</button>
-
+                <div class="modal-footer" style="background-color:#2F5597">
+                    <div class="wrap">
+                        <button type="button" id="btn" class="btn" style="background-color:red;color:white;height:40px;text-align: center;width:150px" data-dismiss="modal">CLOSE</button>
+                    </div>
                 </div>
             </div>
         </div>

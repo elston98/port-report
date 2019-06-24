@@ -5058,13 +5058,16 @@ button.close {
 
 .modal-header {
     padding: 15px;
+    height: 60px;
+    text-align: center;
     border-bottom: 1px solid #e5e5e5
 }
 
 .modal-header::after {
     content: "";
     display: table;
-    clear: both
+    clear: both;
+    text-align: center;
 }
 
 .modal-header .close {
@@ -5072,12 +5075,17 @@ button.close {
 }
 
 .modal-title {
-    margin: 0
+    margin: 0;
+    text-align: center;
 }
 
 .modal-body {
     position: relative;
-    padding: 15px
+    padding: 15px;
+}
+
+.modal-footer {
+    height: 60px;
 }
 
 .modal-footer::after {
