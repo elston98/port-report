@@ -1,34 +1,38 @@
 <!DOCTYPE HTML>
-
+<!--
+	Industrious by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
 <html>
 
 <head>
-    <title>OCEANIA</title>
+    <title>Ports: Australia</title>
 
-    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="shortcut icon" href="../images/favicon.ico" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;subset=latin">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/nice-select.css">
-    <link rel="stylesheet" href="assets/css/bootstrap-4.1.3.min.css">
-    <link rel="stylesheet" href="assets/css/animate-3.7.0.css">
-    <!-- <link rel="stylesheet" href="https://waliv.com/assets/bootstrap-material-design-font/css/material.css"> -->
-    <link rel="stylesheet" href="assets/font-plugin/style.css">
-    <link rel="stylesheet" href="assets/tether/tether.min.css">
-    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/dropdown/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/nice-select.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-4.1.3.min.css">
+    <link rel="stylesheet" href="../assets/css/animate-3.7.0.css">
+    <!-- <link rel="stylesheet" href="https://waliv.com/../assets/bootstrap-material-design-font/css/material.css"> -->
+    <link rel="stylesheet" href="../assets/font-plugin/style.css">
+    <link rel="stylesheet" href="../assets/tether/tether.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/dropdown/style.css">
     <link rel="stylesheet" href="https://waliv.com/assets/animate.css/animate.min.css">
-    <link rel="stylesheet" href="assets/socicon/style.css">
-    <link rel="stylesheet" href="assets/themes/style.css">
-    <link rel="stylesheet" href="assets/css/banner.css">
+    <link rel="stylesheet" href="../assets/socicon/style.css">
+    <link rel="stylesheet" href="../assets/themes/style.css">
+    <link rel="stylesheet" href="../assets/css/banner.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="assets/js/index.js"></script>
+    <script src="../assets/js/index.js"></script>
 
 
 
@@ -59,7 +63,6 @@
             font-family: "Calibri";
             border-collapse: collapse;
             width: 80%;
-            text-align: left;
             display: inline-table;
         }
         
@@ -158,12 +161,31 @@
             padding: 0 20px;
         }
         
+        #btn {
+            color: white;
+            display: inline-block;
+            position: relative;
+        }
+        
+        #load {
+            color: #2A4EA6;
+            font-size: 20px;
+        }
+        
+        #heads {
+            color: white;
+            text-align: center;
+            width: inherit;
+            height: inherit;
+        }
+        
+        #err {
+            color: red;
+            font-size: 20px;
+        }
+        
         .fa {
-            box-sizing: border-box;
-            padding-top: 15px;
-            width: 42.5px;
             height: 42.5px;
-            position: absolute;
             top: 0;
             right: 0;
             border-radius: 50%;
@@ -171,6 +193,10 @@
             text-align: center;
             font-size: 1.2em;
             transition: all 1s;
+        }
+        
+        .fa:hover {
+            text-decoration: none;
         }
         
         form:hover {
@@ -186,7 +212,10 @@
             color: #203864;
         }
         
-        */
+        .wrap {
+            vertical-align: middle;
+            display: table-cell;
+        }
     </style>
 </head>
 
@@ -196,8 +225,8 @@
     <section id="banner">
 
         <div class="inner">
-            <h1 style="text-align: left;font-family: 'Calibri';font-weight: bold;opacity:0.9">
-                <a href="javascript:history.go(-1)"> OCEANIA</a></h1>
+            <h1 style="text-align: left;font-family: 'Calibri';font-weight: bold;opacity:0.8">
+                <a href="javascript:history.go(-1)">FIJI</a></h1>
 
         </div>
 
@@ -206,7 +235,17 @@
 
     <form action="">
         <input class="light-table-filter" id="myInput" data-table="order-table" placeholder="Search.." type="search" style="border-radius: 20px;">
-        <i class="fa fa-search"></i>
+        <i class="fa fa-search" style="padding-top: 15px;
+        width: 42.5px;
+        height: 42.5px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 50%;
+        color: #07051a;
+        text-align: center;
+        font-size: 1.2em;
+        transition: all 1s;"></i>
     </form>
 
 
@@ -220,81 +259,66 @@
 
             <thead>
                 <tr>
-                    <th style="background-color:#203864;color:white">OCEANIA</th>
+                    <th style="background-color:#203864;color:white">PORTS OF FIJI</th>
                 </tr>
 
             </thead>
             <tbody>
-                <tr onclick="window.location='oceania/port_american_samoa.html'">
-                    <td>American Samoa</td>
+                <tr onclick="lol(event)" data-toggle="modal" data-target="#orderModal">
+                    <td>Port of Lambasa</td>
+                </tr>
+                <tr onclick="lol(event)" data-toggle="modal" data-target="#orderModal">
+                    <td>Port of Lautoka</td>
+                </tr>
+                <tr onclick="lol(event)" data-toggle="modal" data-target="#orderModal">
+                    <td>Port of Levuka</td>
+                </tr>
+                <tr onclick="lol(event)" data-toggle="modal" data-target="#orderModal">
+                    <td>Port of Savusavu</td>
+                </tr>
+                <tr onclick="lol(event)" data-toggle="modal" data-target="#orderModal">
+                    <td>Port of Suva</td>
                 </tr>
 
-                <tr onclick="window.location='oceania/port_australia.html'">
-
-                    <td>
-                        Australia
-                    </td>
-
-                </tr>
-
-                <tr onclick="window.location='oceania/port_cook_islands.html'">
-                    <td>Cook Islands</td>
-                </tr>
-                <tr onclick="window.location='oceania/port_fiji.html'">
-                    <td>Fiji</td>
-                </tr>
-                <tr onclick="window.location='oceania/port_french_polynesia.html'">
-                    <td>French Polynesia</td>
-                </tr>
-                <tr onclick="window.location='oceania/port_new_caledonia.html'">
-                    <td>New Caledonia</td>
-
-                </tr>
-                <tr onclick="window.location='oceania/port_new_zealand.html'">
-                    <td>
-                        New Zealand
-                    </td>
-                </tr>
-                <tr onclick="window.location='oceania/port_papua_new_guinea.html'">
-                    <td>
-                        Papua New Guinea
-                    </td>
-                </tr>
-                <tr onclick="window.location='oceania/port_samoa.html'">
-                    <td>
-                        Samoa
-                    </td>
-                </tr>
-                <tr onclick="window.location='oceania/port_solomon_islands.html'">
-                    <td>
-                        Solomon Islands
-                    </td>
-                </tr>
-                <tr onclick="window.location='oceania/port_tokleau.html'">
-                    <td>
-                        Tokleau
-                    </td>
-                </tr>
-                <tr onclick="window.location='oceania/port_tonga.html'">
-                    <td>
-                        Tonga
-                    </td>
-                </tr>
-                <tr onclick="window.location='oceania/port_tuvalu.html'">
-                    <td>
-                        Tuvalu
-                    </td>
-                </tr>
-                <tr onclick="window.location='oceania/port_vanuatu.html'">
-                    <td>
-                        Vanuatu
-                    </td>
-                </tr>
             </tbody>
-
 
         </table>
     </div>
+
+    <div id="orderModal" class="modal hide fade" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background-color:white;">
+                <div class="modal-header" style="background-color:#2F5597">
+                    <h4 id="heads" style="text-transform:uppercase;font-weight: bold" class="modal-title"></h4>
+
+
+
+                </div>
+                <div id="mbody" class="modal-body">
+
+                </div>
+                <div class="modal-footer" style="background-color:#2F5597">
+                    <div class="wrap">
+                        <button type="button" id="btn" class="btn" style="background-color:rgb(202, 60, 60);color:white;height:40px;text-align: center;width:150px" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div id="orderModal" class="modal hide fade" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+            <h3>Port</h3>
+        </div>
+        <div id="orderDetails" class="modal-body">
+
+        </div>
+        <div id="orderItems" class="modal-body"></div>
+        <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+        </div>
+    </div> -->
+
 
 
 
@@ -339,47 +363,94 @@
             });
 
         })(document);
-        $('#myInput').on('click', function(e) {
-            e.preventDefault();
-            $(this).css('border-color', 'black');
-        });
+
+        //this function is to get the proper node to retrieve the data port-report data.
+        function lol(event) {
+
+            var mbody = document.getElementById("mbody");
+            var content = document.createElement("p");
+            content.setAttribute("id", "load");
+            content.innerHTML = "Loading Data..";
+            mbody.appendChild(content);
+            var value = event.target.innerHTML;
+            var heads = document.getElementById('heads');
+
+            heads.innerHTML = value;
+
+            var database = firebase.database();
+            var ref = database.ref('Australia/' + value + '/');
+
+            ref.on('value', gotData, errData);
+
+
+        }
+
+        //this function is used to retrieve the firebase port report data and display it in the modal box.
+        function gotData(data) {
+
+            var mbody = document.getElementById("mbody");
+            mbody.innerHTML = "";
+
+
+            var ports = data.val();
+            console.log(ports);
 
 
 
 
+            //if there is no node with the port-name that is clicked error message is displayed
+            if (ports == null) {
+                var err = document.createElement("p");
+                err.setAttribute("id", "err");
+                mbody.innerHTML = "";
+                err.innerHTML = "No Port Reports Found";
+                mbody.appendChild(err);
 
 
-        // function myFunction() {
-        //     var input, filter, table, tr, td, cell, i, j;
-        //     input = document.getElementById("myInput");
-        //     filter = input.value.toUpperCase();
-        //     table = document.getElementById("customers");
-        //     tr = table.getElementsByTagName("tr");
-        //     for (i = 1; i < tr.length; i++) {
-        //         // Hide the row initially.
-        //         tr[i].style.display = "none";
+            } else //if the node is present then all the child values of the node are fetched using for loop.
+            {
 
-        //         td = tr[i].getElementsByTagName("td");
-        //         for (var j = 0; j < td.length; j++) {
-        //             cell = tr[i].getElementsByTagName("td")[j];
-        //             if (cell) {
-        //                 if (cell.innerHTML.toUpperCase().indexOf(filter) > -1) {
-        //                     tr[i].style.display = "";
-        //                     break;
-        //                 }
-        //             }
-        //         }
-        //     }
-        // }
+                var keys = Object.keys(ports);
+                var content = document.createElement("p");
+
+
+
+                for (var i = 0; i < keys.length; i++) {
+
+
+                    var k = keys[i];
+                    var url = ports[k].Url;
+                    var name = ports[k].Name;
+                    console.log(name);
+
+                    var content = document.createElement("p");
+                    content.innerHTML = "<img src='images/Blue.png' style='width:20px;height: 20px;margin-bottom:5px;'> <a style='font-size:20px;font-color: #2A4EA6'   href='" + url + "' >" + name + "</a>";
+
+
+                    mbody.appendChild(content);
+
+
+
+                }
+            }
+        }
+
+
+
+        function errData(err) {
+            console.log("Error");
+        }
     </script>
 
 
 
 
-    <script src="assets/js/jquery.min.js "></script>
-    <script src="assets/js/browser.min.js "></script>
-    <script src="assets/js/breakpoints.min.js "></script>
-    <script src="assets/js/util.js "></script>
+
+
+    <script src="../assets/js/jquery.min.js "></script>
+    <script src="../assets/js/browser.min.js "></script>
+    <script src="../assets/js/breakpoints.min.js "></script>
+    <script src="../assets/js/util.js "></script>
     <script src="https://waliv.com/assets/web/assets/jquery/jquery.min.js"></script>
     <script src="https://waliv.com/assets/formoid/formoid.min.js"></script>
     <script src="https://waliv.com/assets/bootstrap/js/bootstrap.min.js"></script>
@@ -389,7 +460,7 @@
     <script src="https://waliv.com/assets/touch-swipe/jquery.touch-swipe.min.js"></script>
     <script src="https://waliv.com/assets/theme/js/script.js"></script>
     <script src="https://waliv.com/assets/viewport-checker/jquery.viewportchecker.js"></script>
-    <script src="assets/js/main.js "></script>
+    <script src="../assets/js/main.js "></script>
 </body>
 
 </html>

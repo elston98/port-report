@@ -94,7 +94,7 @@ function check() {
         } else {
             // No user is signed in.
 
-            window.location = "master.html";
+            window.location = "../master.html";
 
         }
     });

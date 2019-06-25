@@ -1,0 +1,454 @@
+<!DOCTYPE HTML>
+<!--
+	Industrious by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+    <title>Ports: Australia</title>
+
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;subset=latin">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/nice-select.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-4.1.3.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/animate-3.7.0.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://waliv.com/assets/bootstrap-material-design-font/css/material.css"> -->
+    <link rel="stylesheet" type="text/css" href="../assets/font-plugin/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/tether/tether.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/dropdown/style.css">
+    <link rel="stylesheet" type="text/css" href="https://waliv.com/assets/animate.css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/socicon/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/themes/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/banner.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../assets/js/index.js"></script>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyC4fi9IhjP4ipoKghVCO0U99fWIOyf1l_A",
+            authDomain: "ship-service.firebaseapp.com",
+            databaseURL: "https://ship-service.firebaseio.com",
+            projectId: "ship-service",
+            storageBucket: "ship-service.appspot.com",
+            messagingSenderId: "633265655752",
+            appId: "1:633265655752:web:e084545a3cd944a6"
+
+        };
+        firebase.initializeApp(config);
+    </script>
+
+
+    <style>
+        body {
+            font-family: 'Calibri';
+        }
+        
+        #customers {
+            font-family: "Calibri";
+            border-collapse: collapse;
+            width: 80%;
+            display: inline-table;
+        }
+        
+        #customers td,
+        #customers th {
+            border: 1px solid #CCC;
+            padding: 8px;
+            width: 25%;
+        }
+        
+        #customers tr:nth-child(even) {
+            background-color: #c3e5f3;
+        }
+        
+        #customers tr:nth-child(odd) {
+            background-color: white;
+        }
+        
+        #customers tr:nth-child(odd):hover {
+            background-color: #ddd;
+        }
+        
+        #customers tr:nth-child(even):hover {
+            background-color: #e1ccf0;
+        }
+        
+        #customers td {
+            width: 25%;
+        }
+        
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            font-size: 18px;
+            text-align: center;
+            background-color: #4CAF50;
+            color: #cccccc;
+            width: 25%;
+        }
+        
+        #myInput {
+            background-image: url('/css/searchicon.png');
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            width: 100%;
+            font-size: 16px;
+            padding: 12px 20px 12px 40px;
+            border: 1px solid #ddd;
+            margin-bottom: 12px;
+        }
+        
+        table,
+        tr,
+        td,
+        th {
+            border: 1px solid blue;
+            padding: 2px;
+        }
+        
+        #customers tr {
+            font-size: 15px;
+        }
+        
+        table th {
+            background-color: #999999;
+        }
+        
+        form {
+            position: relative;
+            top: 30px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: all 1s;
+            width: 300px;
+            height: 50px;
+            background: white;
+            box-sizing: border-box;
+            border-radius: 30px;
+            border: 4px solid white;
+            padding: 5px;
+        }
+        
+        input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            ;
+            height: 42.5px;
+            line-height: 30px;
+            outline: 0;
+            border: 0;
+            display: none;
+            font-size: 1em;
+            border-radius: 30px;
+            padding: 0 20px;
+        }
+        
+        #btn {
+            color: white;
+            display: inline-block;
+            position: relative;
+        }
+        
+        #load {
+            color: #2A4EA6;
+            font-size: 20px;
+        }
+        
+        #heads {
+            color: white;
+            text-align: center;
+            width: inherit;
+            height: inherit;
+        }
+        
+        #err {
+            color: red;
+            font-size: 20px;
+        }
+        
+        .fa {
+            height: 42.5px;
+            top: 0;
+            right: 0;
+            border-radius: 50%;
+            color: #07051a;
+            text-align: center;
+            font-size: 1.2em;
+            transition: all 1s;
+        }
+        
+        .fa:hover {
+            text-decoration: none;
+        }
+        
+        form:hover {
+            width: 500px;
+            cursor: pointer;
+        }
+        
+        form:hover input {
+            display: block;
+        }
+        
+        form:hover .fa {
+            color: #203864;
+        }
+        
+        .wrap {
+            vertical-align: middle;
+            display: table-cell;
+        }
+    </style>
+</head>
+
+<body onload="check()" class="is-preload">
+
+
+    <section id="banner">
+
+        <div class="inner">
+            <h1 style="text-align: left;font-family: 'Calibri';font-weight: bold;opacity:0.8">
+                <a href="javascript:history.go(-1)">AMERICAN SAMOA</a></h1>
+
+        </div>
+
+    </section>
+
+
+    <form action="">
+        <input class="light-table-filter" id="myInput" data-table="order-table" placeholder="Search.." type="search" style="border-radius: 20px;">
+        <i class="fa fa-search" style="padding-top: 15px;
+        width: 42.5px;
+        height: 42.5px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 50%;
+        color: #07051a;
+        text-align: center;
+        font-size: 1.2em;
+        transition: all 1s;"></i>
+    </form>
+
+
+
+    <!-- <input type="search" onkeyup="myFunction()" class="light-table-filter" id="myInput" data-table="order-table" placeholder="Filter"> -->
+
+
+
+    <div align="center">
+        <table class="order-table table" id="customers">
+
+            <thead>
+                <tr>
+                    <th style="background-color:#203864;color:white">PORTS OF AMERICAN SAMOA</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr onclick="lol(event)" data-toggle="modal" data-target="#orderModal">
+                    <td>Port of Pago-Pago</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+    </div>
+
+    <div id="orderModal" class="modal hide fade" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background-color:white;">
+                <div class="modal-header" style="background-color:#2F5597">
+                    <h4 id="heads" style="text-transform:uppercase;font-weight: bold" class="modal-title"></h4>
+
+
+
+                </div>
+                <div id="mbody" class="modal-body">
+
+                </div>
+                <div class="modal-footer" style="background-color:#2F5597">
+                    <div class="wrap">
+                        <button type="button" id="btn" class="btn" style="background-color:rgb(202, 60, 60);color:white;height:40px;text-align: center;width:150px" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div id="orderModal" class="modal hide fade" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+            <h3>Port</h3>
+        </div>
+        <div id="orderDetails" class="modal-body">
+
+        </div>
+        <div id="orderItems" class="modal-body"></div>
+        <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+        </div>
+    </div> -->
+
+
+
+
+    <script>
+        (function(document) {
+            'use strict';
+
+            var LightTableFilter = (function(Arr) {
+
+                var _input;
+
+                function _onInputEvent(e) {
+                    _input = e.target;
+                    var tables = document.getElementsByClassName(_input.getAttribute('data-table'));
+                    Arr.forEach.call(tables, function(table) {
+                        Arr.forEach.call(table.tBodies, function(tbody) {
+                            Arr.forEach.call(tbody.rows, _filter);
+                        });
+                    });
+                }
+
+                function _filter(row) {
+                    var text = row.textContent.toLowerCase(),
+                        val = _input.value.toLowerCase();
+                    row.style.display = text.indexOf(val) === -1 ? 'none' : 'table-row';
+                }
+
+                return {
+                    init: function() {
+                        var inputs = document.getElementsByClassName('light-table-filter');
+                        Arr.forEach.call(inputs, function(input) {
+                            input.oninput = _onInputEvent;
+                        });
+                    }
+                };
+            })(Array.prototype);
+
+            document.addEventListener('readystatechange', function() {
+                if (document.readyState === 'complete') {
+                    LightTableFilter.init();
+                }
+            });
+
+        })(document);
+
+        //this function is to get the proper node to retrieve the data port-report data.
+        function lol(event) {
+
+            var mbody = document.getElementById("mbody");
+            var content = document.createElement("p");
+            content.setAttribute("id", "load");
+            content.innerHTML = "Loading Data..";
+            mbody.appendChild(content);
+            var value = event.target.innerHTML;
+            var heads = document.getElementById('heads');
+
+            heads.innerHTML = value;
+
+            var database = firebase.database();
+            var ref = database.ref('Australia/' + value + '/');
+
+            ref.on('value', gotData, errData);
+
+
+        }
+
+        //this function is used to retrieve the firebase port report data and display it in the modal box.
+        function gotData(data) {
+
+            var mbody = document.getElementById("mbody");
+            mbody.innerHTML = "";
+
+
+            var ports = data.val();
+            console.log(ports);
+
+
+
+
+            //if there is no node with the port-name that is clicked error message is displayed
+            if (ports == null) {
+                var err = document.createElement("p");
+                err.setAttribute("id", "err");
+                mbody.innerHTML = "";
+                err.innerHTML = "No Port Reports Found";
+                mbody.appendChild(err);
+
+
+            } else //if the node is present then all the child values of the node are fetched using for loop.
+            {
+
+                var keys = Object.keys(ports);
+                var content = document.createElement("p");
+
+
+
+                for (var i = 0; i < keys.length; i++) {
+
+
+                    var k = keys[i];
+                    var url = ports[k].Url;
+                    var name = ports[k].Name;
+                    console.log(name);
+
+                    var content = document.createElement("p");
+                    content.innerHTML = "<img src='images/Blue.png' style='width:20px;height: 20px;margin-bottom:5px;'> <a style='font-size:20px;font-color: #2A4EA6'   href='" + url + "' >" + name + "</a>";
+
+
+                    mbody.appendChild(content);
+
+
+
+                }
+            }
+        }
+
+
+
+        function errData(err) {
+            console.log("Error");
+        }
+    </script>
+
+
+
+
+
+
+    <script src="../assets/js/jquery.min.js "></script>
+    <script src="../assets/js/browser.min.js "></script>
+    <script src="../assets/js/breakpoints.min.js "></script>
+    <script src="../assets/js/util.js "></script>
+    <script src="https://waliv.com/assets/web/assets/jquery/jquery.min.js"></script>
+    <script src="https://waliv.com/assets/formoid/formoid.min.js"></script>
+    <script src="https://waliv.com/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://waliv.com/assets/tether/tether.min.js"></script>
+    <script src="https://waliv.com/assets/smooth-scroll/smooth-scroll.js"></script>
+    <script src="https://waliv.com/assets/dropdown/js/script.min.js"></script>
+    <script src="https://waliv.com/assets/touch-swipe/jquery.touch-swipe.min.js"></script>
+    <script src="https://waliv.com/assets/theme/js/script.js"></script>
+    <script src="https://waliv.com/assets/viewport-checker/jquery.viewportchecker.js"></script>
+    <script src="../assets/js/main.js "></script>
+</body>
+
+</html>
