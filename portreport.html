@@ -204,19 +204,25 @@
             font-size: 35px;
         }
         
+        @media screen and (max-height: 800px) {
+            section .screen:hover h2 {
+                margin-top: -30%;
+            }
+        }
+        
         section .screen:hover {
             flex-grow: 5;
             opacity: 1;
         }
         
-        @media screen and (max-width: 900px) {
+        @media screen and (max-width: 1100px) {
             section .screen .content h2 {
                 font-size: 20px;
             }
             section .screen:nth-child(1) {
                 background-image: url('images/na.png');
                 background-position: center;
-                background-size: 10rem;
+                background-size: 15rem;
                 background-repeat: no-repeat;
             }
             section .screen:nth-child(1):hover {
@@ -225,7 +231,7 @@
             section .screen:nth-child(2) {
                 background-image: url('images/sa.png');
                 background-position: center;
-                background-size: 10rem;
+                background-size: 15rem;
                 background-repeat: no-repeat;
             }
             section .screen:nth-child(2):hover {
@@ -234,7 +240,7 @@
             section .screen:nth-child(3) {
                 background-image: url('images/eu.png');
                 background-position: center;
-                background-size: 10rem;
+                background-size: 15rem;
                 background-repeat: no-repeat;
             }
             section .screen:nth-child(3):hover {
@@ -243,7 +249,7 @@
             section .screen:nth-child(4) {
                 background-image: url('images/afr.png');
                 background-position: center;
-                background-size: 10rem;
+                background-size: 15rem;
                 background-repeat: no-repeat;
             }
             section .screen:nth-child(4):hover {
@@ -252,7 +258,7 @@
             section .screen:nth-child(5) {
                 background-image: url('images/as.png');
                 background-position: center;
-                background-size: 5rem;
+                background-size: 10rem;
                 background-repeat: no-repeat;
             }
             section .screen:nth-child(5):hover {
@@ -261,7 +267,7 @@
             section .screen:nth-child(6) {
                 background-image: url('images/oc.png');
                 background-position: center;
-                background-size: 10rem;
+                background-size: 15rem;
                 background-repeat: no-repeat;
             }
             section .screen:nth-child(6):hover {
