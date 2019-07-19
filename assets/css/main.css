@@ -3639,7 +3639,7 @@ body.is-preload #banner:before {
 
 body:before {
     content: ' ';
-    background-image: url(../../images/bg2.jpg);
+    background-image: url(../../images/bg5.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
