@@ -19,7 +19,7 @@ button {
     margin-top: 150px;
     padding: 20px;
     display: none;
-    background: white;
+    /* background: white; */
     z-index: -9999;
 }
 
