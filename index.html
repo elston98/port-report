@@ -147,15 +147,15 @@
             top: 40%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 150px;
-            height: 150px;
+            width: 200px;
+            height: 200px;
             border: 5px solid #fff;
             box-shadow: 0 0 0 5px rgba(78, 93, 104, 0.4);
             border-radius: 50%;
             overflow: hidden;
         }
         
-        .wave {
+        .swave {
             position: relative;
             width: 100%;
             height: 100%;
@@ -164,7 +164,7 @@
             /* box-shadow: inset 0 0 50px rgba(0, 0, 0, .5); */
         }
         
-        .wave:after {
+        .swave:after {
             content: '';
             position: absolute;
             width: 185%;
@@ -175,7 +175,7 @@
             /* background: #315299; */
         }
         
-        .wave:before {
+        .swave:before {
             content: '';
             position: absolute;
             width: 200%;
@@ -186,13 +186,13 @@
             /* background: #315299; */
         }
         
-        .wave:before {
+        .swave:before {
             border-radius: 45%;
-            background: rgba(45, 79, 125, 0.5);
+            background: #294FA4;
             animation: animate 5s linear infinite;
         }
         
-        .wave:after {
+        .swave:after {
             border-radius: 40%;
             background: rgba(255, 255, 255, 1);
             animation: animate 10s linear infinite;
@@ -204,6 +204,93 @@
             }
             100% {
                 transform: translate(-50%, -75%) rotate(360deg);
+            }
+        }
+        
+        @import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+        body {
+            font-family: Lato, sans-serif;
+            --col-deepblue: #32B0E3;
+        }
+        
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        footer {
+            width: 100vw;
+            position: fixed;
+            bottom: 0px
+        }
+        
+        footer div {
+            background-color: var(--col-deepblue);
+            margin: -5px 0px 0px 0px;
+            padding: 0px;
+            color: #fff;
+            text-align: center;
+        }
+        
+        svg {
+            width: 100%;
+            overflow: visible;
+        }
+        
+        .wave {
+            animation: wave 3s linear;
+            animation-iteration-count: infinite;
+            fill: #32B0E3;
+        }
+        
+        .drop {
+            fill: var(--col-deepblue);
+            animation: drop 3.2s linear infinite normal;
+            stroke: var(--col-deepblue);
+            stroke-width: 0.5;
+            transform: translateY(25px);
+            transform-box: fill-box;
+            transform-origin: 50% 100%;
+        }
+        
+        #wave2 {
+            animation-duration: 5s;
+            animation-direction: reverse;
+            opacity: .6;
+            fill: #59666F;
+        }
+        
+        #wave3 {
+            animation-duration: 7s;
+            fill: #294FA4;
+        }
+        
+        #wave4 {
+            animation-duration: 9s;
+            fill: #294FA4;
+        }
+        
+        @keyframes drop {
+            0% {
+                transform: translateY(25px);
+            }
+            30% {
+                transform: translateY(-10px) scale(.1);
+            }
+            30.001% {
+                transform: translateY(25px) scale(1);
+            }
+            70% {
+                transform: translateY(25px);
+            }
+            100% {
+                transform: translateY(-10px) scale(.1);
+            }
+        }
+        
+        @keyframes wave {
+            to {
+                transform: translateX(-100%);
             }
         }
     </style>
@@ -230,13 +317,13 @@
     <script src="assets/js/index.js"></script>
 </head>
 
-<body onload="func()">
-    <div class="fullscreen-bg">
+<body>
+    <!-- <div class="fullscreen-bg">
         <video loop muted autoplay class="fullscreen-bg__video">
                             <source src="images/Wave.mp4 "type=" video/mp4">
                            
                         </video>
-    </div>
+    </div> -->
     <h3 style="text-align: center;margin-top:100px"><img src="images/waliv.png" width="200px"></h3>
     <!-- <div id="preloader">
 
@@ -248,7 +335,7 @@
 
     <div class="container">
         <div class="circle">
-            <div class="wave"></div>
+            <div class="swave"></div>
 
         </div>
 
@@ -256,6 +343,17 @@
     </div>
 
 
+    <footer>
+        <svg viewBox="0 0 120 28">
+          <defs>
+            <path id="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+          </defs> 
+      
+          <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-1"></use>
+          <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
+          <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1"></use>
+        </svg>
+    </footer>
 
 </body>
 
