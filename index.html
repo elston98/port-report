@@ -141,7 +141,75 @@
             background-size: cover;
             overflow: hidden;
         }
+        
+        .circle {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 150px;
+            height: 150px;
+            border: 5px solid #fff;
+            box-shadow: 0 0 0 5px rgba(78, 93, 104, 0.4);
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        
+        .wave {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: #32B0E3;
+            border-radius: 50%;
+            /* box-shadow: inset 0 0 50px rgba(0, 0, 0, .5); */
+        }
+        
+        .wave:after {
+            content: '';
+            position: absolute;
+            width: 185%;
+            height: 185%;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -75%);
+            /* background: #315299; */
+        }
+        
+        .wave:before {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -75%);
+            /* background: #315299; */
+        }
+        
+        .wave:before {
+            border-radius: 45%;
+            background: rgba(45, 79, 125, 0.5);
+            animation: animate 5s linear infinite;
+        }
+        
+        .wave:after {
+            border-radius: 40%;
+            background: rgba(255, 255, 255, 1);
+            animation: animate 10s linear infinite;
+        }
+        
+        @keyframes animate {
+            0% {
+                transform: translate(-50%, -75%) rotate(0deg);
+            }
+            100% {
+                transform: translate(-50%, -75%) rotate(360deg);
+            }
+        }
     </style>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
 
     <script>
@@ -170,13 +238,22 @@
                         </video>
     </div>
     <h3 style="text-align: center;margin-top:100px"><img src="images/waliv.png" width="200px"></h3>
-    <div id="preloader">
+    <!-- <div id="preloader">
 
         <div id="loader">
 
         </div>
-    </div>
+    </div> -->
 
+
+    <div class="container">
+        <div class="circle">
+            <div class="wave"></div>
+
+        </div>
+
+
+    </div>
 
 
 
