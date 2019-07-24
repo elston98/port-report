@@ -164,6 +164,16 @@
             /* box-shadow: inset 0 0 50px rgba(0, 0, 0, .5); */
         }
         
+        .title {
+            position: fixed;
+            top: 25%;
+            left: 10%;
+            font-family: 'Calibri';
+            font-size: 18px;
+            display: inline-block;
+            color: grey;
+        }
+        
         .swave:after {
             content: '';
             position: absolute;
@@ -317,7 +327,8 @@
     <script src="assets/js/index.js"></script>
 </head>
 
-<body onload="func()">
+<body onload="setTimeout(function(){func()}, 5000)">
+
     <!-- <div class="fullscreen-bg">
         <video loop muted autoplay class="fullscreen-bg__video">
                             <source src="images/Wave.mp4 "type=" video/mp4">
@@ -335,7 +346,11 @@
 
     <div class="container">
         <div class="circle">
-            <div class="swave"></div>
+            <div class="swave">
+            </div>
+            <div class="title">
+                <p>Loading..Please Wait</p>
+            </div>
 
         </div>
 

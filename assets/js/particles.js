@@ -9,7 +9,16 @@
 
 var pJS = function(tag_id, params) {
 
-    var canvas_el = document.querySelector('#' + tag_id + ' > .particles-js-canvas-el');
+    var canvas_el;
+    if (tag_id == 'particles-js') {
+        canvas_el = document.querySelector('#' + tag_id + ' > .particles-js-canvas-el');
+        console.log(canvas_el);
+
+    } else if (tag_id == 'particles-js2') {
+        canvas_el = document.querySelector('#' + tag_id + ' > .particles-js-canvas-el2');
+        console.log(canvas_el);
+    }
+
 
     /* particles.js variables with default values */
     this.pJS = {
@@ -30,7 +39,7 @@ var pJS = function(tag_id, params) {
                 value: '#fff'
             },
             shape: {
-                type: 'circle',
+                type: 'images',
                 stroke: {
                     width: 0,
                     color: '#ff0000'
@@ -38,11 +47,18 @@ var pJS = function(tag_id, params) {
                 polygon: {
                     nb_sides: 5
                 },
-                image: {
-                    src: '',
-                    width: 100,
-                    height: 100
-                }
+                image: [{
+                        src: '/images/SEAGUL.png',
+                        width: 100,
+                        height: 100
+                    },
+                    {
+                        src: '/images/sea2.png',
+                        width: 100,
+                        height: 100
+                    }
+
+                ]
             },
             opacity: {
                 value: 1,
@@ -1225,6 +1241,7 @@ var pJS = function(tag_id, params) {
     pJS.fn.vendors.destroypJS = function() {
         cancelAnimationFrame(pJS.fn.drawAnimFrame);
         canvas_el.remove();
+        canvas_el2.remove();
         pJSDom = null;
     };
 
@@ -1465,7 +1482,8 @@ window.pJSDom = [];
 
 window.particlesJS = function(tag_id, params) {
 
-    //console.log(params);
+    console.log(params);
+    this.console.log(tag_id);
 
     /* no string id? so it's object params, and set the id with default id */
     if (typeof(tag_id) != 'string') {
@@ -1478,9 +1496,19 @@ window.particlesJS = function(tag_id, params) {
         tag_id = 'particles-js';
     }
 
+
+    var pJS_canvas_class;
+    if (tag_id == 'particles-js') {
+        pJS_canvas_class = 'particles-js-canvas-el';
+
+    } else if (tag_id == 'particles-js2') {
+        pJS_canvas_class = 'particles-js-canvas-el2';
+
+    }
+
     /* pJS elements */
     var pJS_tag = document.getElementById(tag_id),
-        pJS_canvas_class = 'particles-js-canvas-el',
+
         exist_canvas = pJS_tag.getElementsByClassName(pJS_canvas_class);
 
     /* remove canvas if exists into the pJS target tag */
@@ -1492,14 +1520,20 @@ window.particlesJS = function(tag_id, params) {
 
     /* create canvas element */
     var canvas_el = document.createElement('canvas');
+
     canvas_el.className = pJS_canvas_class;
+
 
     /* set size canvas */
     canvas_el.style.width = "100%";
     canvas_el.style.height = "100%";
 
+
     /* append canvas */
     var canvas = document.getElementById(tag_id).appendChild(canvas_el);
+
+
+
 
     /* launch particle.js */
     if (canvas != null) {
