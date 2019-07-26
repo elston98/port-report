@@ -318,7 +318,7 @@
     </section>
 
 
-    <form action="">
+    <form action="" onkeydown="return event.key !='Enter';">
         <input class="light-table-filter" id="myInput" data-table="order-table" placeholder="Search.." type="search" style="border-radius: 20px;">
         <i class="fa fa-search"></i>
     </form>
@@ -419,9 +419,11 @@
         (function(document) {
             'use strict';
 
+
             var LightTableFilter = (function(Arr) {
 
                 var _input;
+
 
                 function _onInputEvent(e) {
                     _input = e.target;
@@ -456,10 +458,6 @@
             });
 
         })(document);
-        $('#myInput').on('click', function(e) {
-            e.preventDefault();
-            $(this).css('border-color', 'black');
-        });
     </script>
 
 
