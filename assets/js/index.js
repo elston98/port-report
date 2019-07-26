@@ -35,6 +35,7 @@ function login() {
         var errorCode = error.code;
         var errorMessage = error.message;
 
+        document.getElementById("lds-ring").style.display = "none";
         window.alert("Error : " + errorMessage);
 
         // ...
