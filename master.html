@@ -198,13 +198,13 @@
 
     <div id="login_div" class="main-div">
         <h3 style="text-align: center"><img src="images/waliv.png" width="200px"></h3>
-        <form>
+        <form action="javascript:;" onsubmit="login()">
             <input type="email" placeholder="Email..." id="email_field" />
             <input type="password" placeholder="Password..." id="password_field" />
 
 
 
-            <button type="submit" onclick="login()">LOGIN</button>
+            <button type="submit">LOGIN</button>
 
         </form>
     </div>
@@ -246,6 +246,26 @@
 
         };
         firebase.initializeApp(config);
+    </script>
+
+    <script>
+        function login() {
+
+            var userEmail = document.getElementById("email_field").value;
+            var userPass = document.getElementById("password_field").value;
+
+
+            firebase.auth().signInWithEmailAndPassword(userEmail, userPass).catch(function(error) {
+                // Handle Errors here.
+                var errorCode = error.code;
+                var errorMessage = error.message;
+
+                window.alert("Error : " + errorMessage);
+
+                // ...
+            });
+
+        }
     </script>
     <script src="assets/js/index.js"></script>
     <script src="assets/js/particles2.js"></script>
