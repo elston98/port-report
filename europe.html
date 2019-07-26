@@ -64,7 +64,14 @@
             font-family: "Calibri";
             border-collapse: collapse;
             width: 24%;
+            position: relative;
             display: inline-table;
+        }
+        
+        @media screen and (max-width:1000px) {
+            #customers {
+                width: 100%;
+            }
         }
         
         #customers td,
@@ -239,7 +246,7 @@
 
 
 
-    <table style="margin-left:20px" class="order-table table" id="customers">
+    <table class="order-table table" id="customers">
 
         <thead>
             <tr>

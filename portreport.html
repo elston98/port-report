@@ -77,7 +77,7 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Courier New';
+            font-family: 'Calibri';
         }
         
         section {
@@ -102,7 +102,7 @@
             width: 100%;
             height: 500px;
             background: none;
-            font-family: 'Courier New', Courier, monospace;
+            font-family: 'Calibri';
             padding-bottom: 100px;
             box-sizing: border-box;
             transform: translateX(0%);
@@ -118,6 +118,7 @@
         h2 {
             margin-top: -45%;
             transition: margin-top 0.5s;
+            font-family: 'Calibri';
         }
         
         section .screen .content h2 {
@@ -142,10 +143,6 @@
         section .screen:nth-child(1):hover {
             background-size: 45rem;
             border: 1px solid rgba(255, 255, 255, .35);
-            /* -webkit-animation: backgroundScroll linear 1;
-            -webkit-animation-fill-mode: forwards;
-            animation: backgroundScroll 1s linear 1;
-            animation-fill-mode: forwards; */
         }
         
         section .screen:nth-child(2) {
@@ -158,10 +155,6 @@
         section .screen:nth-child(2):hover {
             background-size: 45rem;
             border: 1px solid rgba(255, 255, 255, .35);
-            /* -webkit-animation: backgroundScroll linear 1;
-            -webkit-animation-fill-mode: forwards;
-            animation: backgroundScroll 1s linear 1;
-            animation-fill-mode: forwards; */
         }
         
         section .screen:nth-child(3) {
@@ -174,10 +167,6 @@
         section .screen:nth-child(3):hover {
             background-size: 45rem;
             border: 1px solid rgba(255, 255, 255, .35);
-            /* -webkit-animation: backgroundScroll linear 1;
-            -webkit-animation-fill-mode: forwards;
-            animation: backgroundScroll 1s linear 1;
-            animation-fill-mode: forwards; */
         }
         
         section .screen:nth-child(4) {
@@ -190,10 +179,6 @@
         section .screen:nth-child(4):hover {
             background-size: 45rem;
             border: 1px solid rgba(255, 255, 255, .35);
-            /* -webkit-animation: backgroundScroll linear 1;
-            -webkit-animation-fill-mode: forwards;
-            animation: backgroundScroll 1s linear 1;
-            animation-fill-mode: forwards; */
         }
         
         section .screen:nth-child(5) {
@@ -206,10 +191,6 @@
         section .screen:nth-child(5):hover {
             background-size: 35rem;
             border: 1px solid rgba(255, 255, 255, .35);
-            /* -webkit-animation: backgroundScroll linear 1;
-            -webkit-animation-fill-mode: forwards;
-            animation: backgroundScroll 1s linear 1;
-            animation-fill-mode: forwards; */
         }
         
         section .screen:nth-child(6) {
@@ -222,25 +203,12 @@
         section .screen:nth-child(6):hover {
             background-size: 45rem;
             border: 1px solid rgba(255, 255, 255, .35);
-            /* -webkit-animation: backgroundScroll linear 1;
-            -webkit-animation-fill-mode: forwards;
-            animation: backgroundScroll 1s linear 1;
-            animation-fill-mode: forwards; */
             font-size: 40px;
         }
         
         section .screen:hover h2 {
             margin-top: -50%;
             font-size: 35px;
-        }
-        
-        @-webkit-keyframes backgroundScroll {
-            0% {
-                opacity: 0
-            }
-            100% {
-                opacity: 1;
-            }
         }
         
         @media screen and (max-height: 800px) {
@@ -359,7 +327,6 @@
 
 
 
-    <!-- <button class="btn" onclick="logout()">Logout</button> -->
     <section class="split">
 
 
@@ -368,14 +335,12 @@
             <div class="content">
 
                 <h2>North America</h2>
-                <!-- <p>Some content about africa </p> -->
 
             </div>
         </div>
         <div onclick="location.href='south_america.html'" class="screen">
             <div class="content">
                 <h2>South America</h2>
-                <!-- <p>Some content about North America </p> -->
             </div>
 
 
@@ -383,28 +348,24 @@
         <div onclick="location.href='europe.html'" class="screen">
             <div class="content">
                 <h2>Europe<br></h2>
-                <!-- <p>Some content about South America </p> -->
             </div>
 
         </div>
         <div onclick="location.href='africa.html'" class="screen">
             <div class="content">
                 <h2>Africa</h2>
-                <!-- <p>Some content about Australia </p> -->
             </div>
 
         </div>
         <div onclick="location.href='asia.html'" class="screen">
             <div class="content">
                 <h2>Asia</h2>
-                <!-- <p>Some content about Europe </p> -->
             </div>
 
         </div>
         <div onclick="location.href='oceania.html'" class="screen">
             <div class="content">
                 <h2>Oceania</h2>
-                <!-- <p>Some content about Aisa </p> -->
             </div>
 
         </div>
@@ -414,528 +375,7 @@
         <p style="color: white">Designed by &copy; <a href="https://waliv.com/">Waliv Global Services</a></p>
 
     </footer>
-    <!-- <div id="div1">
-    </div>
-    <div id="div2">
-    </div>
-    <div id="div3">
-    </div>
-    <div id="div4">
-    </div>
-    <div id="div5">
-    </div>
-    <div id="div6">
-    </div>
- -->
 
-
-    <!-- 
-    <section id="menu-0">
-
-        <nav class="navbar navbar-dropdown bg-color transparent navbar-fixed-top">
-            <div class="container">
-
-                <div class="mbr-table">
-                    <div class="mbr-table-cell">
-
-                        <div class="navbar-brand">
-                            <a href="index.html" class="navbar-logo"><img src="images/waliv.png" alt="Homepage"></a>
-
-                        </div>
-
-                    </div>
-                    <div class="mbr-table-cell">
-
-                        <button class="navbar-toggler pull-xs-right hidden-md-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
-                            <div class="hamburger-icon"></div>
-                        </button>
-
-                        <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar">
-
-                            <li class="nav-item"><a class="nav-link link" href="index.html">HOME</a></li>
-
-                            <!-- <li class="nav-item dropdown">
-                                <a class="nav-link link dropdown-toggle" data-toggle="dropdown-submenu" href="#" aria-expanded="false">COMPANY</a>
-                                <ul class="dropdown" style="width:174px;">
-                                    <a class="dropdown-item" href="#cta" style="text-align:left; max-width:100%;margin-left:-28px;">VISION &amp; MISSION</a>
-                                    <a class="dropdown-item" href="#aboutus" style="text-align:left; max-width:100%;margin-left:-28px;">ABOUT US<br></a>
-
-
-                                </ul>
-                            </li> 
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link link dropdown-toggle" data-toggle="dropdown-submenu" href="#" aria-expanded="false">SERVICES</a>
-                                <ul class="dropdown" style="width:300px;">
-                                    <a class="dropdown-item" href="services_.html#msg-box8-s" style="margin-left:-23px;">Maritime Technical Administration</a>
-                                    <a class="dropdown-item" href="services_.html#msg-box3-u" style="margin-left:-23px;">Crew Accounts Administration</a>
-                                    <a class="dropdown-item" href="services_.html#header3-15" style="margin-left:-23px;">HSSE Administration</a>
-                                    <a class="dropdown-item" href="services_.html#msg-box8-f" style="margin-left:-23px;">Human Resource Management</a>
-                                </ul>
-                            </li>
-
-
-                            <li class="nav-item" id="mybtn"><a class="nav-link link" href="" onclick="logout()">LOGOUT</a></li>
-
-
-
-
-
-                        </ul>
-
-                        <button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
-                            <div class="close-icon"></div>
-                        </button>
-                    </div>
-                </div>
-
-            </div>
-        </nav>
-
-    </section> -->
-    <!-- Header
-    <header id="header">
-
-        <img src="images/waliv.png" class="logo"></a>
-        <nav style="color:#2969b0;">
-            <a href="#menu">Menu</a>
-        </nav>
-    </header>
-
-    Nav
-    <nav id="menu">
-        <ul class="links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portreport.html">Port Report</a></li>
-            <li><a href="generic.html">Generic</a></li>
-        </ul>
-    </nav> -->
-
-    <!-- Banner -->
-    <!-- <section id="port-banner">
-        <div class="inner">
-            <h1>Port Report</h1>
-
-        </div>
-
-    </section> -->
-
-
-    <!-- Highlights
-    <section class="wrapper">
-        <div class="inner">
-            <header class="special">
-                <h2>Select to Continue</h2>
-                <p></p>
-            </header>
-             <div class="highlights">
-
-
-            Search Area Starts 
-            <div class="search-area">
-                <div class="search-bg">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <form action="#" class="d-md-flex justify-content-between">
-                                    <select id="select1">
-                                        <option value="1">North America</option>
-                                        <option value="2">South America</option>
-                                        <option value="3">Europe</option>
-                                        <option value="4">Asia</option>
-                                        <option value="5">Australia </option>
-                                        <option value="6">Africa</option>
-
-                                    </select>
-                                    <select id="select2">
-
-                                        <option value="1">United States</option>
-                                        <option value="1">United States Minor Outlying Islands</option>
-                                        <option value="1">Canada</option>
-                                        <option value="1">Mexico</option>
-                                        <option value="1">Anguilla</option>
-                                        <option value="1">Antigua and Barbuda</option>
-                                        <option value="1">Aruba</option>
-                                        <option value="1">Bahamas</option>
-                                        <option value="1">Barbados</option>
-                                        <option value="1">Belize</option>
-                                        <option value="1">Bermuda</option>
-                                        <option value="1">British Virgin Islands</option>
-                                        <option value="1">Cayman Islands</option>
-                                        <option value="1">Costa Rica</option>
-                                        <option value="1">Cuba</option>
-                                        <option value="1">Dominica</option>
-                                        <option value="1">Dominican Republic</option>
-                                        <option value="1">El Salvador</option>
-                                        <option value="1">Grenada</option>
-                                        <option value="1">Guadeloupe</option>
-                                        <option value="1">Guatemala</option>
-                                        <option value="1">Haiti</option>
-                                        <option value="1">Honduras</option>
-                                        <option value="1">Jamaica</option>
-                                        <option value="1">Martinique</option>
-                                        <option value="1">Montserrat</option>
-                                        <option value="1">Netherlands Antilles</option>
-                                        <option value="1">Nicaragua</option>
-                                        <option value="1">Panama</option>
-                                        <option value="1">Puerto Rico</option>
-                                        <option value="1">Saint Kitts and Nevis</option>
-                                        <option value="1">Saint Lucia</option>
-                                        <option value="1">Saint Vincent and the Grenadines</option>
-                                        <option value="1">Trinidad and Tobago</option>
-                                        <option value="1">Turks and Caicos Islands</option>
-                                        <option value="1">US Virgin Islands</option>
-
-                                        <option value="2">Argentina</option>
-                                        <option value="2">Bolivia</option>
-                                        <option value="2">Brazil</option>
-                                        <option value="2">Chile</option>
-                                        <option value="2">Colombia</option>
-                                        <option value="2">Ecuador</option>
-                                        <option value="2">Falkland Islands (Malvinas)</option>
-                                        <option value="2">French Guiana</option>
-                                        <option value="2">Guyana</option>
-                                        <option value="2">Paraguay</option>
-                                        <option value="2">Peru</option>
-                                        <option value="2">Suriname</option>
-                                        <option value="2">Uruguay</option>
-                                        <option value="2">Venezuela</option>
-
-                                        <option value="3">United Kingdom</option>
-                                        <option value="3">Albania</option>
-                                        <option value="3">Andorra</option>
-                                        <option value="3">Austria</option>
-                                        <option value="3">Belarus</option>
-                                        <option value="3">Belgium</option>
-                                        <option value="3">Bosnia and Herzegovina</option>
-                                        <option value="3">Bulgaria</option>
-                                        <option value="3">Croatia (Hrvatska)</option>
-                                        <option value="3">Cyprus</option>
-                                        <option value="3">Czech Republic</option>
-                                        <option value="3">France</option>
-                                        <option value="3">Gibraltar</option>
-                                        <option value="3">Germany</option>
-                                        <option value="3">Greece</option>
-                                        <option value="3">Holy See (Vatican City State)</option>
-                                        <option value="3">Hungary</option>
-                                        <option value="3">Italy</option>
-                                        <option value="3">Liechtenstein</option>
-                                        <option value="3">Luxembourg</option>
-                                        <option value="3">Macedonia</option>
-                                        <option value="3">Malta</option>
-                                        <option value="3">Moldova</option>
-                                        <option value="3">Monaco</option>
-                                        <option value="3">Montenegro</option>
-                                        <option value="3">Netherlands</option>
-                                        <option value="3">Poland</option>
-                                        <option value="3">Portugal</option>
-                                        <option value="3">Romania</option>
-                                        <option value="3">San Marino</option>
-                                        <option value="3">Serbia</option>
-                                        <option value="3">Slovakia</option>
-                                        <option value="3">Slovenia</option>
-                                        <option value="3">Spain</option>
-                                        <option value="3">Ukraine</option>
-                                        <option value="3">Denmark</option>
-                                        <option value="3">Estonia</option>
-                                        <option value="3">Faroe Islands</option>
-                                        <option value="3">Finland</option>
-                                        <option value="3">Greenland</option>
-                                        <option value="3">Iceland</option>
-                                        <option value="3">Ireland</option>
-                                        <option value="3">Latvia</option>
-                                        <option value="3">Lithuania</option>
-                                        <option value="3">Norway</option>
-                                        <option value="3">Svalbard and Jan Mayen Islands</option>
-                                        <option value="3">Sweden</option>
-                                        <option value="3">Switzerland</option>
-                                        <option value="3">Turkey</option>
-
-
-                                        <option value="4">Afghanistan</option>
-                                        <option value="4">Armenia</option>
-                                        <option value="4">Azerbaijan</option>
-                                        <option value="4">Bahrain</option>
-                                        <option value="4">Bangladesh</option>
-                                        <option value="4">Bhutan</option>
-                                        <option value="4">British Indian Ocean Territory</option>
-                                        <option value="4">Brunei Darussalam</option>
-                                        <option value="4">Cambodia</option>
-                                        <option value="4">China</option>
-                                        <option value="4">Christmas Island</option>
-                                        <option value="4">Cocos (Keeling) Islands</option>
-                                        <option value="4">Georgia</option>
-                                        <option value="4">Hong Kong</option>
-                                        <option value="4">India</option>
-                                        <option value="4">Indonesia</option>
-                                        <option value="4">Iran</option>
-                                        <option value="4">Iraq</option>
-                                        <option value="4">Israel</option>
-                                        <option value="4">Japan</option>
-                                        <option value="4">Jordan</option>
-                                        <option value="4">Kazakhstan</option>
-                                        <option value="4">Korea, Democratic People's Republic of</option>
-                                        <option value="4">Korea, Republic of</option>
-                                        <option value="4">Kuwait</option>
-                                        <option value="4">Kyrgyzstan</option>
-                                        <option value="4">Lao</option>
-                                        <option value="4">Lebanon</option>
-                                        <option value="4">Malaysia</option>
-                                        <option value="4">Maldives</option>
-                                        <option value="4">Mongolia</option>
-                                        <option value="4">Myanmar (Burma)</option>
-                                        <option value="4">Nepal</option>
-                                        <option value="4">Oman</option>
-                                        <option value="4">Pakistan</option>
-                                        <option value="4">Philippines</option>
-                                        <option value="4">Qatar</option>
-                                        <option value="4">Russian Federation</option>
-                                        <option value="4">Saudi Arabia</option>
-                                        <option value="4">Singapore</option>
-                                        <option value="4">Sri Lanka</option>
-                                        <option value="4">Syria</option>
-                                        <option value="4">Taiwan</option>
-                                        <option value="4">Tajikistan</option>
-                                        <option value="4">Thailand</option>
-                                        <option value="4">East Timor</option>
-                                        <option value="4">Turkmenistan</option>
-                                        <option value="4">United Arab Emirates</option>
-                                        <option value="4">Uzbekistan</option>
-                                        <option value="4">Vietnam</option>
-                                        <option value="4">Yemen</option>
-
-                                        <option value="5">American Samoa</option>
-                                        <option value="5">Australia</option>
-                                        <option value="5">Cook Islands</option>
-                                        <option value="5">Fiji</option>
-                                        <option value="5">French Polynesia (Tahiti)</option>
-                                        <option value="5">Guam</option>
-                                        <option value="5">Kiribati</option>
-                                        <option value="5">Marshall Islands</option>
-                                        <option value="5">Micronesia, Federated States of</option>
-                                        <option value="5">Nauru</option>
-                                        <option value="5">New Caledonia</option>
-                                        <option value="5">New Zealand</option>
-                                        <option value="5">Niue</option>
-                                        <option value="5">Northern Mariana Islands</option>
-                                        <option value="5">Palau</option>
-                                        <option value="5">Papua New Guinea</option>
-                                        <option value="5">Pitcairn</option>
-                                        <option value="5">Samoa</option>
-                                        <option value="5">Solomon Islands</option>
-                                        <option value="5">Tokelau</option>
-                                        <option value="5">Tonga</option>
-                                        <option value="5">Tuvalu</option>
-                                        <option value="5">Vanuatu</option>
-                                        <option valud="5">Wallis and Futuna Islands</option>
-
-                                        <option value="6">Algeria</option>
-                                        <option value="6">Angola</option>
-                                        <option value="6">Benin</option>
-                                        <option value="6">Botswana</option>
-                                        <option value="6">Burkina Faso</option>
-                                        <option value="6">Burundi</option>
-                                        <option value="6">Cameroon</option>
-                                        <option value="6">Cape Verde</option>
-                                        <option value="6">Central African Republic</option>
-                                        <option value="6">Chad</option>
-                                        <option value="6">Comoros</option>
-                                        <option value="6">Congo</option>
-                                        <option value="6">Congo, the Democratic Republic of the</option>
-                                        <option value="6">Dijibouti</option>
-                                        <option value="6">Egypt</option>
-                                        <option value="6">Equatorial Guinea</option>
-                                        <option value="6">Eritrea</option>
-                                        <option value="6">Ethiopia</option>
-                                        <option value="6">Gabon</option>
-                                        <option value="6">Gambia</option>
-                                        <option value="6">Ghana</option>
-                                        <option value="6">Guinea</option>
-                                        <option value="6">Guinea-Bissau</option>
-                                        <option value="6">Cote d'Ivoire (Ivory Coast)</option>
-                                        <option value="6">Kenya</option>
-                                        <option value="6">Lesotho</option>
-                                        <option value="6">Liberia</option>
-                                        <option value="6">Libya</option>
-                                        <option value="6">Madagascar</option>
-                                        <option value="6">Malawi</option>
-                                        <option value="6">Mali</option>
-                                        <option value="6">Mauritania</option>
-                                        <option value="6">Mauritius</option>
-                                        <option value="6">Mayotte</option>
-                                        <option value="6">Morocco</option>
-                                        <option value="6">Mozambique</option>
-                                        <option value="6">Namibia</option>
-                                        <option value="6">Niger</option>
-                                        <option value="6">Nigeria</option>
-                                        <option value="6">Reunion</option>
-                                        <option value="6">Rwanda</option>
-                                        <option value="6">Sao Tome and Principe</option>
-                                        <option value="6">Saint Helena</option>
-                                        <option value="6">Senegal</option>
-                                        <option value="6">Seychelles</option>
-                                        <option value="6">Sierra Leone</option>
-                                        <option value="6">Somalia</option>
-                                        <option value="6">South Africa</option>
-                                        <option value="6">South Sudan</option>
-                                        <option value="6">Sudan</option>
-                                        <option value="6">Swaziland</option>
-                                        <option value="6">Tanzania</option>
-                                        <option value="6">Togo</option>
-                                        <option value="6">Tunisia</option>
-                                        <option value="6">Uganda</option>
-                                        <option value="6">Western Sahara</option>
-                                        <option value="6">Zambia</option>
-                                        <option value="6">Zimbabwe</option>
-
-                                    </select>
-                                    <button type="submit" onclick="" class="template-btn">Search</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-    <!-- </div> -->
-    <!-- Search Area End -->
-
-    <!-- <section>
-                    <div class="content ">
-                        <header>
-                            <a href="# " class="icon fa-ship "><span class="label ">Icon</span></a>
-                            <h3>Port Reports</h3>
-                        </header>
-                        <p>Port Reports help </p>
-                    </div>
-                </section>
-                <section>
-                    <div class="content ">
-                        <header>
-                            <a href="# " class="icon fa-bullseye "><span class="label ">Icon</span></a>
-                            <h3>G.P.A</h3>
-                        </header>
-                        <p>Help supervisors to observe their subordinates more closely. Motivate employees by providing feedback on how they are doing </p>
-                    </div>
-                </section>
-                <section>
-                    <div class="content ">
-                        <header>
-                            <a href="# " class="icon fa-floppy-o "><span class="label ">Icon</span></a>
-                            <h3>Ipsum consequat</h3>
-                        </header>
-                        <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
-                    </div>
-                </section> -->
-
-    <!-- <section>
-                    <div class="content ">
-                        <header>
-                            <a href="# " class="icon fa-paper-plane-o "><span class="label ">Icon</span></a>
-                            <h3>Faucibus consequat</h3>
-                        </header>
-                        <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
-                    </div>
-                </section> -->
-
-    <!-- 
-    <section id="cta " class="wrapper ">
-        <div class="inner ">
-            <h2>Curabitur ullamcorper ultricies</h2>
-            <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing.
-                Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing sed feugiat eu faucibus. Integer ac sed amet praesent. Nunc lacinia ante nunc ac gravida.</p>
-        </div>
-    </section> -->
-
-    <!-- Testimonials
-    <section class="wrapper ">
-        <div class="inner ">
-            <header class="special ">
-                <h2>Faucibus consequat lorem</h2>
-                <p>In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor.</p>
-            </header>
-            <div class="testimonials ">
-                <section>
-                    <div class="content ">
-                        <blockquote>
-                            <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
-                        </blockquote>
-                        <div class="author ">
-                            <div class="image ">
-                                <img src="images/pic01.jpg " alt=" " />
-                            </div>
-                            <p class="credit ">- <strong>Jane Doe</strong> <span>CEO - ABC Inc.</span></p>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <div class="content ">
-                        <blockquote>
-                            <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
-                        </blockquote>
-                        <div class="author ">
-                            <div class="image ">
-                                <img src="images/pic03.jpg " alt=" " />
-                            </div>
-                            <p class="credit ">- <strong>John Doe</strong> <span>CEO - ABC Inc.</span></p>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <div class="content ">
-                        <blockquote>
-                            <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
-                        </blockquote>
-                        <div class="author ">
-                            <div class="image ">
-                                <img src="images/pic02.jpg " alt=" " />
-                            </div>
-                            <p class="credit ">- <strong>Janet Smith</strong> <span>CEO - ABC Inc.</span></p>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- Footer -->
-    <!-- Footer -->
-    <!-- <footer id="footer">
-        <div class="inner">
-            <div class="content">
-                <section>
-                    <h3>Address</h3>
-                    <p><address>G-101, Trinity Pride,<br>Evershine City,<br>Vasai(East)-491208,<br>India</address></p>
-                </section>
-                <section>
-                    <h3>Contact</h3>
-                    <p>Email: admin@https://waliv.com</p>
-                    <p>Tel-Office: +91 823 700 4217</p>
-                    <p>Tel-Office: +91 932 000 4217</p>
-                </section>
-                <!-- <section>
-                        <h4>Sem turpis amet semper</h4>
-                        <ul class="alt">
-                            <li><a href="#">Dolor pulvinar sed etiam.</a></li>
-                            <li><a href="#">Etiam vel lorem sed amet.</a></li>
-                            <li><a href="#">Felis enim feugiat viverra.</a></li>
-                            <li><a href="#">Dolor pulvinar magna etiam.</a></li>
-                        </ul>
-                    </section> -->
-    <!-- <section>
-                        <h4>Magna sed ipsum</h4>
-                        <ul class="plain">
-                            <li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
-                            <li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
-                            <li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
-                            <li><a href="#"><i class="icon fa-github">&nbsp;</i>Github</a></li>
-                        </ul>
-                    </section> 
-            </div>
-            <div class="copyright">
-                &copy; Designed and Developed by
-                <a href="https://https://waliv.com">Waliv Global Services</a>.
-            </div>
-        </div>
-    </footer> -->
 
 
     <!-- Scripts -->
@@ -953,65 +393,7 @@
             $select2.html($options.filter('[value="' + this.value + '"]'));
         }).trigger('change');
     </script>
-    <!-- <script>
-        function search() {
-            $(document).ready(function() {
 
-                        var table = document.getElementById("customers");
-
-                        table.innerHTML = "";
-                        //var optionValue = $(this).val();
-                        //var optionText = $('#dropdownList option[value="'+optionValue+'"]').text();
-                        var val1 = $("#select1 option:selected").text();
-
-                        //var optionValue = $(this).val();
-                        //var optionText = $('#dropdownList option[value="'+optionValue+'"]').text();
-                        var val2 = $("#select2 option:selected").text();
-
-                        //     var row = table.insertRow();
-
-                        //     if (val1 == "Asia") {
-                        //         var cell1 = row.insertCell(0);
-                        //         var cell2 = row.insertCell(1);
-                        //         cell1.innerHTML = val1;
-                        //         cell2.innerHTML = val2;
-                        //     } else if (val1 == "North America") {
-                        //         var cell1 = row.insertCell(0);
-                        //         var cell2 = row.insertCell(1);
-                        //         cell1.innerHTML = val1;
-                        //         cell2.innerHTML = val2;
-                        //     } else if (val1 == "South America") {
-                        //         var cell1 = row.insertCell(0);
-                        //         var cell2 = row.insertCell(1);
-                        //         cell1.innerHTML = val1;
-                        //         cell2.innerHTML = val2;
-                        //     } else if (val1 == "Africa") {
-                        //         var cell1 = row.insertCell(0);
-                        //         var cell2 = row.insertCell(1);
-                        //         cell1.innerHTML = val1;
-                        //         cell2.innerHTML = val2;
-                        //     } else if (val1 == "Europe") {
-                        //         var cell1 = row.insertCell(0);
-                        //         var cell2 = row.insertCell(1);
-                        //         cell1.innerHTML = val1;
-                        //         cell2.innerHTML = val2;
-                        //     } else if (val1 == "Australia ") {
-                        //         var cell1 = row.insertCell(0);
-                        //         var cell2 = row.insertCell(1);
-                        //         cell1.innerHTML = val1;
-                        //         cell2.innerHTML = val2;
-                        //     }
-
-                        //     document.getElementById("customers").style.display = "table";
-
-
-
-                        // });
-
-
-
-                    }
-    </script> -->
 
     <script src="https://waliv.com/assets/web/assets/jquery/jquery.min.js"></script>
     <script src="https://waliv.com/assets/formoid/formoid.min.js"></script>

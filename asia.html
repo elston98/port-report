@@ -105,6 +105,12 @@
             width: 25%;
         }
         
+        @media screen and (max-width:1000px) {
+            #customers {
+                width: 100%;
+            }
+        }
+        
         #myInput {
             background-image: url('/css/searchicon.png');
             background-position: 10px 10px;
@@ -209,7 +215,8 @@
         }
         /* IE 6 */
         
-        * html #footer {
+        html,
+        #footer {
             position: absolute;
             top: expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight: document.body.clientHeight)+(ignoreMe=document.documentElement.scrollTop ? document.documentElement.scrollTop: document.body.scrollTop))+'px');
         }
@@ -251,7 +258,7 @@
 
 
 
-    <table style="margin-left:20px" class="order-table table" id="customers">
+    <table class="order-table table" id="customers">
 
         <thead>
             <tr>
