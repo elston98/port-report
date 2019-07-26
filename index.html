@@ -154,9 +154,11 @@
             width: 200px;
             height: 200px;
             border: 5px solid #fff;
-            box-shadow: 0 0 0 5px rgba(78, 93, 104, 0.4);
+            box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.4);
+            border: solid 1px grey;
             border-radius: 50%;
             overflow: hidden;
+            box-shadow: 10px 5px 5px #2E54A3;
         }
         
         .swave {
@@ -304,6 +306,49 @@
                 height: 35%;
             }
         }
+        
+        figure {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            height: 300px;
+            width: 300px;
+        }
+        /*WATER*/
+        
+        figure:first-child {
+            background: radial-gradient(circle at 100px 100px, rgb(255, 255, 255), rgb(255, 255, 255));
+        }
+        /*LAND*/
+        
+        figure:nth-child(2) {
+            background-image: url("/images/earth2.svg");
+            background-repeat: repeat-x;
+            background-size: cover 100%;
+            opacity: 0.75;
+            animation: rotate-land 10s infinite linear;
+        }
+        /*ANIMATION*/
+        
+        @keyframes rotate-land {
+            0% {
+                background-position: -400px 0;
+            }
+            100% {
+                background-position: 10px 0;
+            }
+        }
+        
+        @keyframes rotate-cloud {
+            0% {
+                background-position: -796px 0;
+            }
+            100% {
+                background-position: 0 0;
+            }
+        }
     </style>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -347,8 +392,12 @@
 
     <div class="container">
         <div class="circle">
-            <div class="swave">
-            </div>
+            <figure>
+
+            </figure>
+            <figure></figure>
+            <figure></figure>
+
 
 
         </div>
