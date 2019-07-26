@@ -33,10 +33,17 @@ function login() {
     firebase.auth().signInWithEmailAndPassword(userEmail, userPass).catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
-        var errorMessage = error.message;
 
+
+        if (errorCode == "auth/user-not-found") {
+            var errorMessage = "This user does not exist in our database. Please check the email-id";
+        } else if (errorCode == "auth/wrong-password") {
+            var errorMessage = "Incorrect Password Entered";
+        } else {
+            var errorMessage = error.message;
+        }
         document.getElementById("lds-ring").style.display = "none";
-        window.alert("Error : " + errorMessage);
+        window.alert("Login Failed : " + errorMessage);
 
         // ...
     });
